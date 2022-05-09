@@ -18,9 +18,16 @@ const app=Vue.createApp({
         // setName: function(event,lastName){
             // this.name=event.target.value+' '+lastName;
         // },
+
+        // submitForm: function(event){
+        //     event.preventDefault();
+        //     alert('this is test');
+        // },
+
+        submitForm: function(){
+            alert('this is test');
+        }
     }
 });
 
 app.mount('#app');
-
-// https://www.youtube.com/watch?v=kolVTQhm71o&list=PL_euSNU_eLbedoBv-RllKj_f2Yh--91nZ&index=7
