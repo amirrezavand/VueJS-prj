@@ -72,11 +72,13 @@ export default {
   provide(){
     return {
       user :computed(()=>this.user),
+      changeuser:this.changeUser,
     }
   },
   methods: {
-    changeUser(){
-      this.user = 'Updated by Amir Hossain Rezavand';
+    changeUser(user){
+      if(user) this.user=user;
+      else this.user = 'Updated by Amir Hossain Rezavand';
     },
     changeTitle() {
       this.posts[0].title = this.posts[0].title + "---";

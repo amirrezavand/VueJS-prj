@@ -4,7 +4,7 @@
       {{ user.value }}
     </div>
   <div>
-    <a href="" @click.prevent="changeuser">Change User</a>
+    <a href="" @click.prevent="changeuser('Updated amir from child')">Change User</a>
   </div>
   </div>
 </template>
